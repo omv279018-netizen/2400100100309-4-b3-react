@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My College</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#34495e;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            margin:10px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        section{
+            padding:20px;
+        }
+
+        footer{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="calculator">
-    <input type="text" id="display" disabled>
+<header>
+    <h1>ABC College</h1>
+    <p>Welcome to Our College Website</p>
+</header>
 
-    <div class="buttons">
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="append('7')">7</button>
-        <button onclick="append('8')">8</button>
-        <button onclick="append('9')">9</button>
-        <button onclick="append('/')">/</button>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+</nav>
 
-        <button onclick="append('4')">4</button>
-        <button onclick="append('5')">5</button>
-        <button onclick="append('6')">6</button>
-        <button onclick="append('*')">*</button>
+<section>
+    <h2>About Our College</h2>
+    <p>
+        ABC College is one of the best institutions providing quality education.
+        We focus on innovation, learning, and student development.
+    </p>
 
-        <button onclick="append('1')">1</button>
-        <button onclick="append('2')">2</button>
-        <button onclick="append('3')">3</button>
-        <button onclick="append('-')">-</button>
+    <h2>Courses Offered</h2>
+    <ul>
+        <li>B.Tech</li>
+        <li>BCA</li>
+        <li>MCA</li>
+        <li>BBA</li>
+    </ul>
+</section>
 
-        <button onclick="append('0')">0</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="append('+')">+</button>
-    </div>
-</div>
-
-<script src="script.js"></script>
+<footer>
+    <p>© 2026 ABC College</p>
+</footer>
 
 </body>
 </html>
